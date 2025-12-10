@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ancient Mother — Food That Heals, Daily.</title>
+  <meta name="description" content="Apartment-based daily health food & herbal juices. Ayurvedic, millet meals, sugarcane herbal bar. Subscription plans for individuals, couples, families." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --green:#6A8F3F; /* Leaf Green */
+      --olive:#4E5A30; /* Deep Olive */
+      --brown:#8B6A4F; /* Soil Brown */
+      --cream:#F3E9D7; /* Warm Cream */
+      --dark:#2a2a2a;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Outfit,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;color:var(--dark);background:#fff;}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{max-width:1100px;margin:0 auto;padding:0 20px}
+    .btn{display:inline-block;padding:12px 18px;border-radius:12px;font-weight:600}
+    .btn-primary{background:var(--green);color:#fff;box-shadow:0 6px 20px rgba(106,143,63,.25)}
+    .btn-outline{border:2px solid var(--green);color:var(--green)}
+    .tag{background:var(--cream);color:var(--olive);display:inline-block;padding:6px 10px;border-radius:999px;font-weight:600;letter-spacing:.2px}
+    header{position:sticky;top:0;background:#fff;border-bottom:1px solid #eee;z-index:10}
+    .nav{display:flex;align-items:center;justify-content:space-between;height:70px}
+    .brand{display:flex;align-items:center;gap:10px}
+    .logo{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--cream),#fff);border:2px solid var(--green);display:grid;place-items:center;color:var(--green);font-weight:700}
+    .nav a{font-weight:600;margin-left:18px;color:#444}
+    .hero{background:linear-gradient(180deg, #f7f2e9, #fff);padding:56px 0 28px;border-bottom:1px solid #eee}
+    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:26px;align-items:center}
+    .hero h1{font-size:42px;line-height:1.1;margin:8px 0 12px;color:var(--olive)}
+    .hero p{font-size:18px;color:#444}
+    .hero .badges{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0 22px}
+    .hero .cta{display:flex;gap:12px;flex-wrap:wrap}
+
+    .section{padding:56px 0}
+    .section h2{font-size:32px;margin:0 0 14px;color:var(--olive)}
+    .muted{color:#666}
+    .grid{display:grid;gap:18px}
+    .grid-3{grid-template-columns:repeat(3,1fr)}
+    .card{border:1px solid #eee;border-radius:18px;padding:18px;background:#fff;box-shadow:0 10px 30px rgba(0,0,0,.04)}
+    .card h3{margin:8px 0 8px;font-size:20px;color:var(--olive)}
+    .list{margin:0;padding-left:18px;color:#444}
+
+    .feature{display:flex;gap:16px}
+    .feature i{width:36px;height:36px;border-radius:10px;display:grid;place-items:center;background:var(--cream);color:var(--olive);font-weight:700}
+
+    .plans{display:grid;gap:18px;grid-template-columns:repeat(5,1fr)}
+    .plan{border:2px solid var(--cream);border-radius:20px;padding:18px;background:#fff;box-shadow:0 10px 30px rgba(78,90,48,.08)}
+    .plan h3{margin:6px 0 6px}
+    .price{font-size:26px;color:var(--green);font-weight:700}
+    .pill{display:inline-block;background:var(--cream);color:var(--olive);padding:4px 10px;border-radius:999px;font-weight:600;font-size:13px}
+    .plan ul{margin:12px 0 0;padding-left:18px;color:#444}
+
+    .menu-grid{display:grid;gap:18px;grid-template-columns:repeat(2,1fr)}
+
+    .table{width:100%;border-collapse:collapse;font-size:15px}
+    .table th,.table td{border-bottom:1px solid #eee;padding:10px;text-align:left}
+    .table th{background:var(--cream);color:var(--olive)}
+
+    .cta-bar{background:#f8f4ec;border-top:1px solid #eee;padding:16px 0}
+    .cta-wrap{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+
+    footer{background:#121212;color:#ddd;padding:32px 0;margin-top:40px}
+    footer a{color:#ddd}
+
+    @media (max-width: 980px){
+      .hero-grid{grid-template-columns:1fr}
+      .plans{grid-template-columns:repeat(2,1fr)}
+      .menu-grid{grid-template-columns:1fr}
+      .grid-3{grid-template-columns:1fr}
+    }
+    @media (max-width: 520px){
+      .plans{grid-template-columns:1fr}
+      .hero h1{font-size:34px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo">ॐ</div>
+        <div>
+          <div style="font-weight:800;color:var(--olive);font-size:18px">Ancient Mother</div>
+          <div style="font-size:12px;color:#6b6b6b">Food That Heals, Daily.</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#benefits">Benefits</a>
+        <a href="#menu">Menu</a>
+        <a href="#plans">Plans</a>
+        <a href="#guide">Who It's For</a>
+        <a href="#contact" class="btn btn-outline" style="padding:8px 12px">WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="tag">Apartment‑based Daily Health Service</span>
+        <h1>Herbal Juices & Millet Meals, right inside your community.</h1>
+        <p>Ayurveda‑inspired, low‑sugar, no maida, no refined oil. Built for diabetes, BP, heart health, joints and everyday energy.</p>
+        <div class="badges">
+          <span class="pill">No Refined Sugar</span>
+          <span class="pill">Millets • Ragi • Moringa</span>
+          <span class="pill">Hygienic • Fresh • Daily</span>
+        </div>
+        <div class="cta">
+          <a class="btn btn-primary" href="#plans">View Subscription Plans</a>
+          <a class="btn btn-outline" href="#guide">Which plan suits me?</a>
+        </div>
+      </div>
+      <div class="card">
+        <h3 style="margin-top:0">Signature: Herbal Sugarcane Bar</h3>
+        <table class="table">
+          <thead><tr><th>Juice</th><th>Helps With</th></tr></thead>
+          <tbody>
+            <tr><td><strong>DiabeCare Cane</strong></td><td>Diabetes balance (cane + bitter gourd + tulsi + lemon)</td></tr>
+            <tr><td><strong>HeartLite Cane</strong></td><td>BP & heart wellness (cane + mint + amla + ginger)</td></tr>
+            <tr><td><strong>Golden Heal Cane</strong></td><td>Anti‑inflammatory (cane + turmeric + black pepper + lemon)</td></tr>
+            <tr><td><strong>EnergyBoost Cane</strong></td><td>Stamina & iron (cane + beetroot + lemon + rock salt)</td></tr>
+            <tr><td><strong>CoolChill Cane</strong></td><td>Hydration & cooling (cane + coconut water + lemon)</td></tr>
+          </tbody>
+        </table>
+        <p class="muted" style="margin:10px 0 0">Customised to taste: light / medium / strong.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="benefits">
+    <div class="container">
+      <h2>Why Residents Love Us</h2>
+      <p class="muted">We fit health into your routine — no extra time, no compromise on taste.</p>
+      <div class="grid grid-3" style="margin-top:18px">
+        <div class="card feature"><i>1</i><div><h3>Daily Convenience</h3><p class="muted">Inside your apartment. No delivery fee, no waiting.</p></div></div>
+        <div class="card feature"><i>2</i><div><h3>Ayurveda‑Inspired</h3><p class="muted">Millets, ragi, moringa, herbal teas — gentle on digestion.</p></div></div>
+        <div class="card feature"><i>3</i><div><h3>Sugar‑Friendly Options</h3><p class="muted">Low‑GI meals and herbal blends designed for diabetes & BP.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="menu">
+    <div class="container">
+      <h2>Daily Menu</h2>
+      <div class="menu-grid">
+        <!-- Juice Images -->
+        <div class="card"><img src="C:\Users\sai charan\Downloads\1800x1200_wheatgrass_bigbead.webp" alt="Wheatgrass Juice"><h3>Wheatgrass Cleanser</h3><p class="muted">Sugar control & detox</p></div>
+        <div class="card"><img src="C:\Users\sai charan\Downloads\moringa-products-500x500.webp" alt="Moringa Juice"><h3>Moringa Vitality Shot</h3><p class="muted">Energy & hemoglobin</p></div>
+        <div class="card"><img src="C:\Users\sai charan\Downloads\download_1737700604990_amla-juice-benefits-for-females_3jzhpe.avif" alt="Amla Aloe Juice"><h3>Amla + Aloe Immunity</h3><p class="muted">Digestion & immunity</p></div>
+        <div class="card"><img src="C:\Users\sai charan\Downloads\organic-tulsi-juice.png" alt="Karela Tulsi Juice"><h3>Karela-Tulsi Balance</h3><p class="muted">Diabetes support</p></div>
+        
+        <!-- Ragi & Millet Foods -->
+        <div class="card"><img src="C:\Users\sai charan\Downloads\hq720.jpg" alt="Ragi Java"><h3>Ragi Java</h3><p class="muted">Calcium & bone health</p></div>
+        <div class="card"><img src="C:\Users\sai charan\Downloads\Jowar-Rotis-3.jpg" alt="Jowar Roti Plate"><h3>Jowar Roti Plate</h3><p class="muted">Low GI & sugar-friendly</p></div>
+        <div class="card"><img src="C:\Users\sai charan\Downloads\Foxtail_Millet_Khichdi_Recipe_480x480.webp" alt="Millet Khichdi"><h3>Millet Khichdi</h3><p class="muted">Light & heart-friendly</p></div>
+        <div class="card"><img src="C:\Users\sai charan\Downloads\Sprout-Salad-Thumbnail-500x375.jpg" alt="Sprouts Bowl"><h3>Sprouts + Seed Bowl</h3><p class="muted">Protein & gut health</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="plans">
+    <div class="container">
+      <h2>Subscription Plans</h2>
+      <p class="muted">Simple monthly plans. Pause/upgrade anytime.</p>
+      <div class="plans" style="margin-top:18px">
+        <div class="plan">
+          <span class="pill">Most Affordable</span>
+          <h3>Basic Morning Juice</h3>
+          <div class="price">₹1,499 / month</div>
+          <ul>
+            <li>1 herbal juice every morning</li>
+            <li>Diabetes & BP friendly options</li>
+            <li>Apartment pickup window</li>
+          </ul>
+          <p style="margin-top:12px"><a class="btn btn-primary" href="#contact">Subscribe via WhatsApp</a></p>
+        </div>
+        <div class="plan">
+          <h3>Juice + Herbal Tea</h3>
+          <div class="price">₹2,199 / month</div>
+          <ul>
+            <li>Morning juice + evening herbal tea</li>
+            <li>Choose flavours daily</li>
+            <li>Flexible pause</li>
+          </ul>
+          <p style="margin-top:12px"><a class="btn btn-primary" href="#contact">Subscribe</a></p>
+        </div>
+        <div class="plan">
+          <span class="pill">Best Value</span>
+          <h3>Complete Health</h3>
+          <div class="price">₹2,999 / month</div>
+          <ul>
+            <li>Morning juice + evening tea</li>
+            <li>+ 2 millet meals per week</li>
+            <li>Ideal for working adults</li>
+          </ul>
+          <p style="margin-top:12px"><a class="btn btn-primary" href="#contact">Subscribe</a></p>
+        </div>
+        <div class="plan">
+          <h3>Couple Plan</h3>
+          <div class="price">₹5,499 / month</div>
+          <ul>
+            <li>Complete plan × 2 people</li>
+            <li>Shared pickup window</li>
+            <li>Priority support</li>
+          </ul>
+          <p style="margin-top:12px"><a class="btn btn-primary" href="#contact">Join as Couple</a></p>
+        </div>
+        <div class="plan">
+          <h3>Family Plan</h3>
+          <div class="price">₹8,999 / month</div>
+          <ul>
+            <li>Daily juices for 3–4 members</li>
+            <li>+ 2 millet meal packs weekly</li>
+            <li>Great for apartment families</li>
+          </ul>
+          <p style="margin-top:12px"><a class="btn btn-primary" href="#contact">Join Family Plan</a></p>
+        </div>
+      </div>
+      <p class="muted" style="margin-top:10px">Intro offers available for first 10 members in each apartment community.</p>
+    </div>
+  </section>
+
+  <section class="section" id="guide">
+    <div class="container">
+      <h2>Which plan suits me?</h2>
+      <div class="grid grid-3" style="margin-top:18px">
+        <div class="card"><h3>Diabetes / Sugar</h3><ul class="list"><li>DiabeCare Cane, Wheatgrass, Bitter gourd+Tulsi</li><li>Millet rotis (Ragi/Jowar), sprouts</li><li><strong>Plan:</strong> Basic or Complete</li></ul></div>
+        <div class="card"><h3>BP & Heart</h3><ul class="list"><li>HeartLite Cane, Tulsi/Ashwagandha tea</li><li>Low‑salt millet meals, amla juice</li><li><strong>Plan:</strong> Juice+Tea or Complete</li></ul></div>
+        <div class="card"><h3>Arthritis / Joints</h3><ul class="list"><li>Golden Heal Cane (turmeric+pepper)</li><li>Ragi java (calcium), sesame snacks (no sugar)</li><li><strong>Plan:</strong> Complete</li></ul></div>
+        <div class="card"><h3>Age 50+</h3><ul class="list"><li>Light millet khichdi, ragi java</li><li>Amla/aloe for immunity, digestive teas</li><li><strong>Plan:</strong> Basic or Family</li></ul></div>
+        <div class="card"><h3>Fitness / Weight</h3><ul class="list"><li>EnergyBoost Cane, chia detox</li><li>Sprout bowls, millet salads</li><li><strong>Plan:</strong> Complete</li></ul></div>
+        <div class="card"><h3>General Wellness</h3><ul class="list"><li>Any morning juice + evening tea</li><li>2 millet meals/week routine</li><li><strong>Plan:</strong> Juice+Tea</li></ul></div>
+      </div>
+      <p class="muted" style="margin-top:8px">We provide food guidance — not medical treatment. Please continue your prescribed medicines and consult your doctor as needed.</p>
+    </div>
+  </section>
+
+  <section class="section" id="trust">
+    <div class="container">
+      <h2>Clean • Fresh • Consistent</h2>
+      <div class="grid grid-3">
+        <div class="card"><h3>Visible Hygiene</h3><p class="muted">Clean prep area, fresh ingredients, minimal oil, eco‑friendly serviceware.</p></div>
+        <div class="card"><h3>No Nasties</h3><p class="muted">No refined sugar, no maida, no artificial flavours or colours.</p></div>
+        <div class="card"><h3>Daily Reliability</h3><p class="muted">Fixed timings inside your apartment. Health that fits your routine.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-bar" id="contact">
+    <div class="container cta-wrap">
+      <div>
+        <strong>Ready to start?</strong>
+        <div class="muted">Join the apartment WhatsApp group to subscribe or ask questions.</div>
+      </div>
+      <div>
+        <a class="btn btn-primary" href="https://wa.me/9692285070" target="_blank" rel="noopener">Chat on WhatsApp</a>
+        <a class="btn btn-outline" href="#" onclick="alert('Call: +91-9692285070');return false;">Call Us</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div style="display:flex;gap:24px;flex-wrap:wrap;align-items:flex-start;justify-content:space-between">
+        <div style="max-width:520px">
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:8px">
+            <div class="logo" style="border-color:#fff;color:#fff">ॐ</div>
+            <div style="font-weight:800;font-size:18px">Ancient Mother</div>
+          </div>
+          <div style="color:#bdbdbd">Apartment‑based daily health food service bringing Ayurveda‑inspired nourishment to your routine.</div>
+        </div>
+        <div>
+          <div style="font-weight:700;margin-bottom:6px">Timings</div>
+          <div style="color:#bdbdbd">Morning 6:30–9:30 • Evening 4:30–7:00</div>
+          <div style="margin-top:10px;font-weight:700">Location</div>
+          <div style="color:#bdbdbd">Inside Your Apartment Community</div>
+        </div>
+        <div>
+          <div style="font-weight:700;margin-bottom:6px">Contact</div>
+          <a href="https://wa.me/9692285070" target="_blank" rel="noopener">WhatsApp</a><br>
+          <a href="#" onclick="alert('Call: +91-9692285070');return false;">+91‑9692285070</a>
+        </div>
+      </div>
+      <div style="margin-top:18px;color:#8b8b8b;font-size:13px">© <span id="y"></span> Ancient Mother • Food That Heals, Daily.</div>
+      <div style="margin-top:18px;color:#8b8b8b;font-size:13px">© <span id="y"></span> ABOUT US: FOUNDER: PEDDSAPELLY SAI CHARAN.</div>
+      <div style="margin-top:18px;color:#8b8b8b;font-size:13px">© <span id="y"></span> CO-FOUNDER: MONINGI CHAKRADHAR RAO.</div>
+      <div style="margin-top:18px;color:#8b8b8b;font-size:13px">© <span id="y"></span> MANAGER: PORIKA PHANEENDRA.</div>
+    </div>
+  </footer>
+
+  <script>
+    // set year
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
